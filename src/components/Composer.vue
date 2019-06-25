@@ -528,7 +528,7 @@ export default {
 				var em = document.createTextNode(emoji.getAttribute('alt'))
 				emoji.replaceWith(em)
 			})
-			let content = element.innerText.trim()
+			let content = element.innerHTML.replace(/\<(?!br\s*\/?)[^>]+\>/gi, '').replace(/\<br\s*\/?\>/gi, '\n').trim()
 			let to = []
 			let hashtags = []
 			const mentionRegex = /@(([\w-_.]+)(@[\w-.]+)?)/g

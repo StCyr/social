@@ -100,7 +100,6 @@ export default {
 			if (typeof message === 'undefined') {
 				return ''
 			}
-			message = message.replace(/(?:\r\n|\r|\n)/g, '<br />')
 			message = message.linkify({
 				formatHref: {
 					hashtag: function(href) {
@@ -111,6 +110,7 @@ export default {
 					}
 				}
 			})
+			message = message.replace(/(?:\r\n|\r|\n)/g, '<br>')
 			message = this.$twemoji.parse(message)
 			return message
 		},
