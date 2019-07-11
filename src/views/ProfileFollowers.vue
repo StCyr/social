@@ -34,6 +34,11 @@
 		display: flex;
 		flex-wrap: wrap;
 	}
+	.user-entry {
+		width: 50%;
+		padding: 20px;
+		margin-bottom: 10px;
+	}
 </style>
 
 <script>
