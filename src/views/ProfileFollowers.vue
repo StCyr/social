@@ -35,7 +35,7 @@
 		flex-wrap: wrap;
 	}
 	.user-entry {
-		width: 50%;
+		width: 100%;
 		padding: 20px;
 		margin-bottom: 10px;
 	}
